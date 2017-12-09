@@ -1,0 +1,293 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Didact Gothic", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  position: relative;
+  background-color: black;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  /*opacity:0.90;*/
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../images/main-bg.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../images/aboutMe.jpg');
+  min-height:80%;
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+.pimg2-animate{
+    opacity: 1;
+}
+
+.pimg3{
+  background-image:url('../images/blur-bg.jpg');
+  min-height:100%;
+}
+
+.pimg4{
+  background-image:url('../images/main-bg.jpg');
+  min-height:85%;
+}
+
+.section{
+    text-align:center;
+    padding:25px 50px;
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.section h2 {
+    font-size: 40px;
+}
+
+/*.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}*/
+
+/*.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}*/
+
+/*.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}*/
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+
+/*******************
+		HOME	
+********************/
+
+/*body { 
+    background-image: url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+
+/*HEADER*/
+.nav li {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.socmed img{
+    width: 35px;
+    height: 35px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+.socmed a:hover{
+    background: none !important;
+    z-index: 2 !important;
+    -webkit-transition: all 300ms ease-in !important;
+    -webkit-transform: scale(1.3) !important;
+    -ms-transition: all 300ms ease-in !important;
+    -ms-transform: scale(1.3) !important;   
+    -moz-transition: all 300ms ease-in !important;
+    -moz-transform: scale(1.3) !important;
+    transition: all 300ms ease-in !important;
+    transform: scale(1.15) !important;
+}
+
+.skillsLogo {
+    width: 100%;
+    height: 100%;
+
+}
+
+.header {
+	height: 50%;
+	margin-top: 10%;
+}
+
+.h1-home {
+	font-size: 45px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.h2-home {
+	margin-top: -1%;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+
+/* Underline From Center */
+.nav-link a {
+    color: #fff !important;
+    background-color: transparent !important;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.nav-link a:hover:before, .nav-link a:focus:before, .nav-link a:active:before {
+    left: 0;
+    right: 0;
+}
+
+
+/*******************
+		ABOUT	
+********************/
+
+.second-bg { 
+    background-image: url(../images/blur-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.bio {
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 10px;
+    height: 150%;
+    margin-top: 18%;
+}
+
+.pBio {
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-pic {
+    float: left;
+    padding-right: 20px;
+}
+
+.edu {
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 10px;
+    margin-top: 1%;
+    margin-bottom: 3%; 
+}
+
+.logos {
+/*    background-color: rgba(89, 89, 89, 0.5);*/
+    background-color: rgba(242, 242, 242, 0.5);
+    padding-top: 20px;
+    margin-top: 3%;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.alumni {
+    margin-top: 15%;
+    margin-bottom: 16%;
+}
+
+li {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.lth {
+    margin-top: 8%;
+    margin-left: 2%;
+}
+
+/*ABOUT ME*/
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.contactMe {
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 10px;
+    height: 150%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
